@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+    <link rel="stylesheet" href="Calculator.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="bg">
+
+      
+    </div>
+     <!--HEADER-->
+     <div class="header">
+      <a href="#default" class="logo">SAF.</a>
+      <div class="header-right">
+        <a class="active" href="calc.html">Home</a>
+        <a href="Calculator.html">Calculator</a>
+        <a href="About.html">About</a>
+      </div>
+    </div>
+    <div style="padding-left:500px">
+      
+    <!-- NUMBER CONVERTER CONTENT-->
+    <div class="container">
+     
+      <h1>Number Converter</h1>
+      <form id="converterForm">
+        <div class="input-group">
+          <label for="numberInput">Number:</label>
+          <input type="text" id="numberInput" placeholder="Enter your number here" required>
+        </div>
+        <div class="input-group">
+          <label for="conversionFrom">Convert from:</label>
+          <select id="conversionFrom" required>
+            <option value="binary">Binary</option>
+            <option value="decimal">Decimal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="conversionTo">Convert to:</label>
+          <select id="conversionTo" required>
+            <option value="binary">Binary</option>
+            <option value="decimal">Decimal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+          </select>
+        </div>
+        <div class="button-group">
+          <input type="submit" value="Convert"class="button-pressed">
+        </div>
+      </form>
+      <div id="errorPopup" class="error-popup">
+        <span id="errorMessage"></span>
+        <button onclick="closeErrorPopup()">Close</button>
+      </div>
+  
+      <div class="result" id="result"></div>
+    </div>
+  
+    <script src="script.js"></script>
+   
+
+
+  
